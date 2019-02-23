@@ -1,0 +1,27 @@
+{
+  "name": "hackathon19",
+  "version": "1.0.0",
+  "description": "Hackathon Project for Developer Week 2019",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongojs": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparkins/hackathon19.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sparkins/hackathon19/issues"
+  },
+  "homepage": "https://github.com/sparkins/hackathon19#readme"
+}

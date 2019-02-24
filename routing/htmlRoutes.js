@@ -3,8 +3,6 @@ var app = express();
 
 var path = require('path');
 
-var mongojs = require('mongojs')
-
 app.use(express.static("public"));
 
 module.exports = function (app) {

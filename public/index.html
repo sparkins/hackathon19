@@ -2,19 +2,228 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Syncopate" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Corben|Fredericka+the+Great|Gruppo|Monoton|Faster+One|Zilla+Slab+Highlight" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
-
-    <title>hackathon19</title>
+    <title>Play Attic</title>
 </head>
 
-<body>
+<!-- Clarify: images -->
+<!-- Agora: trivia -->
 
-    <h1>Welcome to our Hackathon Project</h1>
+<style>
+    * {
+        background: url('https://i.imgur.com/m5dTfrp.png?1') center fixed;
+        background-size: cover;
+        font-family: 'Syncopate', sans-serif;
+    }
+
+    /* <!--HTML Styles for mobile device --> */
+
+
+    @include media-breakpoint-up(sm) {
+        html {
+            font-size: 1.2rem;
+        }
+
+    }
+
+    @include media-breakpoint-up(md) {
+        html {
+            font-size: 1.4rem;
+        }
+
+    }
+
+    @include media-breakpoint-up(lg) {
+        html {
+            font-size: 1.6rem;
+        }
+
+    }
+
+    /* <!-- Styles for GameAddict home page --> */
+
+    #header {
+        font-family: 'orbitron', sans-serif;
+        color: rgba(36, 156, 36, 0.9);
+        text-shadow: 1px 6px rgb(26, 22, 83);
+        letter-spacing: 10px;
+        margin-top: 1%;
+        font-size: 40px;
+    }
+
+    .col {
+        /* margin-top: 6%; */
+        width: 25%;
+        float: left;
+
+    }
+
+    .gameDiv {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    a {
+        height: 300px;
+    }
+
+    .gameImg {
+        width: 250px;
+        height: 220px;
+        padding: 10%;
+        border-bottom: 2px solid green;
+        border-right: 2px solid green;
+        border-bottom-right-radius: 50%;
+    }
+
+    .descriptionTag {
+        font-size: 70%;
+    }
+
+
+    .tag {
+        color: rgba(36, 156, 36, 0.9);
+        text-shadow: 2px 2px rgb(17, 13, 73);
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .gameImg {
+            width: 50px;
+            height: 50px;
+        }
+        a {
+            width: 60px;
+        }
+        .tag {
+            font-size: 12px;
+        }
+    }
+</style>
+
+
+<body>
+    <center>
+        <h2 id='header'>The Play Attic</h2>
+
+    </center>
+
+    <!-- To add more games, update row 3 in the respective column, starting with column 1 -Alyssa -->
+
+    <div class="col allgames" id='col1'>
+        <div class="row">
+            <!-- Hovering Hero - Helicopter Game. Col1, Row1 -->
+            <div clas='gameDiv'>
+                <a href='https://alyssa-geoffray.github.io/HoveringHero/index.html' target='_blank'>
+                    <span class='tag' id='helicoptergameTag'>Hovering Hero<br> <span class='descriptionTag'>[helicopter
+                            style game]</span></span>
+                    <img src='https://i.imgur.com/L40jllb.png' id='helicoptergame' class='gameImg'></a></div>
+            <!-- HeiroGif - Giphy API call, made fun and easy. Col1, Row2 -->
+            <div clas='gameDiv'>
+                <a href='https://ageoffray.github.io/Hiero_Gif_Game/index.html' target='_blank'>
+                    <span class='tag' id='giffyTag'>HeiroGif Player<br> <span class='descriptionTag'>[search engine via
+                            giphy]</span></span>
+                    <img src='https://i.imgur.com/H3Hro7e.gif' id='giffy' class='gameImg'></a></div>
+            <!-- Col1, Row3 -->
+                        <!-- <div class="gameDiv">
+                            a
+                <a href='' target='_blank'>
+                    <span class='tag' id=''>Name Of Game<br><span class="descriptionTag">[Description of Game]</span></span>
+                    <img src='https://i.imgur.com/ScVxXA5.jpg' class='gameImg'>
+                </a>
+            </div> -->
+            
+        </div>
+    </div>
+
+    <div class="col allgames" id='col2'>
+        <div class="row">
+            <!-- Play With Patterns - Creative Art Tool. Col2, Row1 -->
+            <div clas='gameDiv'>
+                <a href='https://greench0.github.io/svg-practice/index.html' target="_blank">
+                    <span class='tag' id='patternsTag'>Patterns<br> <span class='descriptionTag'>[creativity
+                            with patterns]</span></span>
+                    <img src='https://i.imgur.com/R2QWKu1.png' id='patterns' class='gameImg'></a></div>
+            <!-- European Geography Quiz - Trivia Game. Col2, Row2 -->
+            <div clas='gameDiv'>
+                <a href='https://alyssa-geoffray.github.io/EuropeTriviaGame/index.html' target='_blank'>
+                    <span class='tag' id='europetriviaTag'>Explore Europe<br> <span class='descriptionTag'>[geography-themed
+                            trivia]</span></span>
+                    <img src='https://i.imgur.com/UQva3uj.gif' id='europetrivia' class='gameImg'></a></div>
+
+            <!-- Col2, Row3 -->
+                        <!-- <div class="gameDiv">
+                <a href='' target='_blank'>
+                    <span class='tag' id=''>Name Of Game<br><span class="descriptionTag">[Description of Game]</span></span>
+                    <img src='https://i.imgur.com/ScVxXA5.jpg' class='gameImg'>
+                </a>
+            </div> -->
+
+        </div>
+    </div>
+
+    <div class="col allgames" id='col3'>
+        <div class="row">
+            <!-- Space Defender - Shooter game. Col3, Row1 -->
+            <div clas='gameDiv'>
+                <a href="https://alyssa-geoffray.github.io/SpaceDefender/index.html" target="_blank">
+                    <span class='tag' id='shootergameTag'>Space Defender<br> <span class='descriptionTag'>[shooting
+                            game]</span></span>
+                    <img src='https://i.imgur.com/DSkEJpm.png?2' id='shootergame' class='gameImg'></a></div>
+            <!-- Crystal Ball - Crystal Game. Col3, Row2 -->
+            <div clas='gameDiv'> 
+                <a href='./crystals/index.html' target="_blank">
+                    <span class='tag' id='crystalgameTag'>Counting Crystals<br> <span class='descriptionTag'>[a numbers
+                            game]</span></span>
+                    <img src='https://i.imgur.com/EjSBS2L.png' id='crystalgame' class='gameImg'></a></div>
+            <!-- Col3, Row3 -->
+            <!-- <div class="gameDiv">
+                <a href='' target='_blank'>
+                    <span class='tag' id=''>Name Of Game<br><span class="descriptionTag">[Description of Game]</span></span>
+                    <img src='https://i.imgur.com/ScVxXA5.jpg' class='gameImg'>
+                </a>
+            </div> -->
+
+        </div>
+    </div>
+
+    <div class="col allgames" id='col4'>
+        <div class="row">
+            <!-- Aquatic Hangman - Word Guess Game. Col4, Row1 -->
+            <div clas='gameDiv'>
+                <a href='https://alyssa-geoffray.github.io/AquaticHangman/Index.html' target="_blank">
+                    <span class='tag' id='aquatichangmanTag'>Aquatic Hangman<br> <span class='descriptionTag'>[word
+                            guess game]</span></span>
+                    <img src='https://i.imgur.com/cFThhhN.png?1' id='aquatichangman' class='gameImg'></a></div>
+            <!-- Col4, Row2 -->
+            <div clas='gameDiv'>
+                <a href='https://alyssa-geoffray.github.io/InteractiveBox/index.html' target="_blank">
+                    <span class='tag' id='boxTag'>Build-A-Box<br> <span class='descriptionTag'>[customize your square]</span></span>
+                    <img src='https://i.imgur.com/d4PMrrh.png' id='box' class='gameImg'>
+                </a></div>
+            <!-- Col4, Row3 -->
+            <!-- <div class="gameDiv">
+                <a href='' target='_blank'>
+                    <span class='tag' id=''>Name Of Game<br><span class="descriptionTag">[Description of Game]</span></span>
+                    <img src='https://i.imgur.com/ScVxXA5.jpg' class='gameImg'>
+                </a>
+            </div> -->
+        
+        </div>
+    </div>
+
 </body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+
+</script>
 
 </html>

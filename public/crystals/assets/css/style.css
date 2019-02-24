@@ -1,0 +1,118 @@
+* {
+    background: url('https://i.imgur.com/fv9pDvJ.jpg') center fixed no-repeat;
+    background-size: cover;
+    font-family: 'Poiret One', cursive;
+}
+
+.jumbotron {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder; 
+    opacity: 0.9;
+    color: #e0cfeb;
+    text-shadow: 1px 2px 5px #000;
+    margin-top: 2%;
+    padding: 1%;
+    background: lightblue;
+    font-family: 'Megrim', cursive;
+   
+        border: 3px dashed  #ffffff;
+        box-shadow: 0 0 0 8px dotted #e0cfeb;
+        
+   }
+    
+
+    .instructionsRow{
+        margin-top: 1%;
+        color: black;
+        font-weight: bold;
+        background: lightblue;
+        opacity: 0.9;
+    }
+    .instructions {
+        float: left;    
+        text-align: center;
+        vertical-align: middle;
+        padding-left:2%;
+        padding-top: 1.5%;
+        font-size: 24px;
+        font-weight: bold;
+        border-right-style: solid;
+        border-right-color: black;
+        border-right-width: 1px;
+    }
+    
+    .instructionDetails {
+        padding: 1.5%;
+    }
+    
+    .card {
+        margin-top: 2%;
+        opacity: 0.9;
+        color: black;
+        /* background: lightblue; */
+    }
+    
+    .gameTotals {
+        text-align: center;
+        /* padding: 5px; */
+    }
+    
+    #gamesWon {
+        color: rgb(13, 80, 13);
+    }
+    
+    #gamesLost {
+        color: rgb(104, 26, 26);
+    }
+
+    .totalscores {
+        padding: 0;
+        margin-top: 1%;
+    }
+
+    .wins, .losses {
+        font-size: 20px;
+
+    }
+    
+    .targetScoreCard {
+        text-align: center;
+        color: darkblue;
+        font-weight: bold;
+        border-right: 2px ridge darkblue;
+        /* border-top: 2px ridge darkblue; */
+        border-top-right-radius: 20%;
+    }
+    
+    .currentScoreCard {
+        text-align: center;
+        color: darkblue;
+        font-weight: bold;
+        border-left: 2px ridge darkblue;
+        /* border-top: 2px ridge darkblue; */
+        border-top-left-radius: 20%;
+    }
+    
+    .pickACrystal {
+        text-align: center;    
+        background: lightblue;
+        opacity: 0.9;
+        color: black;
+        font-weight: bold;
+        margin-top: 1%;
+        padding: 1.5%;
+    }
+    
+    .crystalRow {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    
+    .card-img-top {
+        width: 200px;
+        height: 200px;
+        align-content: center;
+        background: none;
+    
+    }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Orbitron|Poiret+One|Quattrocento+Sans|Righteous|Srisakdi|Syncopate"
+        rel="stylesheet">
+    <title>Crystal Game</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Area to display total games won and total games lost -->
+
+    <div class="row gameStats">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <div class="card targetScoreCard totalscores">
+                <div class="card-body">
+                    <div class='won-text'><strong id='gamesWon'>Games Won: </strong></div>
+                    <div class='won-text wins'></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card currentScoreCard totalscores">
+                <div class="card-body">
+                    <div class='won-text'><strong id='gamesLost'>Games Lost: </strong></div>
+                    <div class='win-text losses'></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+
+    <!-- Jumbotron for the game title. -->
+
+    <div class="container">
+        <div class="jumbotron">Counting Crystals</div>
+
+        <!-- Area for instructions -->
+
+        <div class="row instructionsRow">
+            <div class="col-md-3 instructions">Instructions:</div>
+            <div class="col-md-9 instructionDetails">
+                <h5> To win the game you must achieve the exact number of points as the 'Target' score.
+                    To accumulate points you must click on the crystal images, which each have a different
+                    number of points associated to them. Good Luck!!! </h5>
+            </div>
+        </div>
+
+<!-- Area for current game score and target score -->
+
+        <div class="row gameTotals">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="card targetScoreCard">
+                    <div class="card-body">
+                        <h5 class="card-title "><strong>Target Score: </strong></h5>
+                        <h5 class="card-text targetScore"></h5>
+                    </div>
+                </div>......
+            </div>
+            <div class="col-md-4">
+                <div class="card currentScoreCard">
+                    <div class="card-body">
+                        <h5 class="card-title "><strong>Current Score: </strong></h5>
+                        <h5 class="card-text currentScore"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 crystalInstructions">
+                <h3 class="pickACrystal">Click on an image of a crystal below to score points</h3>
+            </div>
+        </div>
+        <div class="row crystalRow">
+            <div class="col-md-2">
+                <div class="card crystal-card">
+                    <img class="card-img-top crystal-image crystalOne" src="https://i.imgur.com/EjSBS2L.png" alt="1st Crystal">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div class="card crystal-card">
+                    <img class="card-img-top crystal-image crystalTwo" src="https://i.imgur.com/2M5V0ei.png" alt="2nd Crystal">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div class="card crystal-card">
+                    <img class="card-img-top crystal-image crystalThree" src="https://i.imgur.com/UvwYrla.png" alt="3rd Crystal">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div class="card crystal-card">
+                    <img class="card-img-top crystal-image crystalFour" src="https://i.imgur.com/s5CLBKS.png" alt="4th Crystal">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    </script>
+
+    <!-- Adds a link to the JavaScript file.         -->
+    <script src='assets/javascript/game.js'></script>
+
+</body>
+
+</html>
